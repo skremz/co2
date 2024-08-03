@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>Globale CO2 Emissionen</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header mit globalem Menü -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="./images/logo.webp" alt="Mein Logo" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Über uns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dienstleistungen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="app"></div>
+
+  <!-- Footer -->
+  <footer class="footer bg-light text-center py-3">
+    <div class="container">
+      <div class="mb-2">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#rechtliches-info" aria-expanded="false" aria-controls="rechtliches-info">
+          Rechtliches
+        </button>
+        <div id="rechtliches-info" class="collapse">
+          <p class="mt-2">Hier stehen die rechtlichen Informationen.</p>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#impressum-info" aria-expanded="false" aria-controls="impressum-info">
+          Impressum
+        </button>
+        <div id="impressum-info" class="collapse">
+          <p class="mt-2">Hier steht das Impressum.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vue.js und die JavaScript-Dateien -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script defer="defer" src="/punkt/js/chunk-vendors.6b4523c7.js"></script>
+  <script defer="defer" src="/punkt/js/app.c3045336.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#rechtliches-info').on('show.bs.collapse', function () {
+        $('#impressum-info').collapse('hide');
+      });
+      $('#impressum-info').on('show.bs.collapse', function () {
+        $('#rechtliches-info').collapse('hide');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[
+  { "id": 1, "country": "Saudi-Arabien", "company": "Saudi Aramco", "emissions": 5300000 },
+  { "id": 2, "country": "USA", "company": "Chevron", "emissions": 5000000 },
+  { "id": 3, "country": "Russland", "company": "Gazprom", "emissions": 4900000 },
+  { "id": 4, "country": "USA", "company": "ExxonMobil", "emissions": 4500000 },
+  { "id": 5, "country": "China", "company": "China National Petroleum Corporation (CNPC)", "emissions": 4400000 },
+  { "id": 6, "country": "Vereinigtes Königreich", "company": "Royal Dutch Shell", "emissions": 4200000 },
+  { "id": 7, "country": "Vereinigtes Königreich", "company": "BP", "emissions": 4000000 },
+  { "id": 8, "country": "Frankreich", "company": "TotalEnergies", "emissions": 3800000 },
+  { "id": 9, "country": "Indien", "company": "Coal India", "emissions": 3500000 },
+  { "id": 10, "country": "Iran", "company": "National Iranian Oil Company (NIOC)", "emissions": 3300000 },
+  { "id": 11, "country": "USA", "company": "ConocoPhillips", "emissions": 3200000 },
+  { "id": 12, "country": "China", "company": "Sinopec", "emissions": 3100000 },
+  { "id": 13, "country": "China", "company": "PetroChina", "emissions": 3000000 },
+  { "id": 14, "country": "Australien", "company": "BHP", "emissions": 2900000 },
+  { "id": 15, "country": "Kanada", "company": "Suncor Energy", "emissions": 2800000 },
+  { "id": 16, "country": "China", "company": "China Shenhua Energy", "emissions": 2700000 },
+  { "id": 17, "country": "USA", "company": "Occidental Petroleum", "emissions": 2600000 },
+  { "id": 18, "country": "USA", "company": "Valero Energy", "emissions": 2500000 },
+  { "id": 19, "country": "Südafrika", "company": "Anglo American", "emissions": 2400000 },
+  { "id": 20, "country": "Brasilien", "company": "Petrobras", "emissions": 2300000 }
+]
