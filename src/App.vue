@@ -61,6 +61,25 @@ export default {
       this.sortOrders[key] = this.sortOrders[key] * -1;
     }
   },
+  methods: {
+    sanitizeInput() {
+      this.sanitizedFilter = this.escapeHTML(this.filter);
+    },
+    escapeHTML(str) {
+      return str.replace(/[&<>"'`=\/]/g, function(s) {
+        return {
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#39;',
+          '/': '&#x2F;',
+          '`': '&#x60;',
+          '=': '&#x3D;'
+        }[s];
+      });
+    }
+  },
   mounted() {
     fetch('co2-data.json')
       .then(response => response.json())
